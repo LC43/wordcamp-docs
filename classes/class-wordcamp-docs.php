@@ -103,7 +103,7 @@ class WordCamp_Docs {
 				$data = $template->sanitize( $_POST );
 				$generator->generate_pdf_from_string(
 					$template->render( $data ),
-					$template->get_filename(),
+					sanitize_file_name( $template->get_filename() ),
 					array( 'assets' => $template->get_assets() ) );
 
 				$generator->serve_pdf_to_browser( $template->get_filename(), true );

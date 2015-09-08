@@ -1,6 +1,8 @@
 <?php
 /**
  * Speakers Invitation Template
+ *
+ * @see classes/class-wordcamp-docs.php for implementation details.
  */
 class WordCamp_Docs_Template_Speaker_Invitation implements WordCamp_Docs_Template {
 	public function form( $data ) {
